@@ -316,6 +316,7 @@ function accum(charChain) {
 
 console.log(accum("ZpglnRxqenU")); //Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu
 
+/*Highest & Lowest */
 function highAndLow(numbers) {
   numbers = numbers.split(" ").sort((num1, num2) => num2 - num1);
   return `${numbers[0]} ${numbers[numbers.length - 1]}`;
