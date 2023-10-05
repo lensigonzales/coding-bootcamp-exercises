@@ -315,3 +315,12 @@ function accum(charChain) {
 //return string
 
 console.log(accum("ZpglnRxqenU")); //Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu
+
+function highAndLow(numbers) {
+  numbers = numbers.split(" ").sort((num1, num2) => num2 - num1);
+  return `${numbers[0]} ${numbers[numbers.length - 1]}`;
+}
+
+console.log(highAndLow("1 2 3 4 5")); // return "5 1"
+console.log(highAndLow("1 2 -3 4 5")); // return "5 -3"
+console.log(highAndLow("1 9 3 4 -5")); // return "9 -5"
