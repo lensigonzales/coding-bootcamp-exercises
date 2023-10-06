@@ -1,11 +1,7 @@
 function filterApiData(apiData, mandatoryKeys) {
-  const result = [];
-  for (let object of apiData) {
-    if (mandatoryKeys.every((key) => Object.keys(object).includes(key))) {
-      result.push(object);
-    }
-  }
-  return result;
+  return apiData.filter((object) =>
+    mandatoryKeys.every((key) => object.hasOwnProperty(key))
+  );
 }
 
 //every key in mandatoryKeys durchlaufen und checken ob apiData diese keys includen
@@ -22,6 +18,6 @@ const data2 = [
   { id: 3, price: 50 },
 ];
 
-const filteredData2 = filterApiData(data2, ["id", "price"]);
+const filteredData2 = filterApiData(data, ["id", "price"]);
 
-console.log(filteredData2); // [{ id: 1, price: 100 }, { id:3, price: 50}]
+console.log(filteredData); // [{ id: 1, price: 100 }, { id:3, price: 50}]
