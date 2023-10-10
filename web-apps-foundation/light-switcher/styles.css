@@ -1,0 +1,29 @@
+body {
+  transition: background-color 1s ease-in;
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+
+.btn {
+  font-size: 2rem;
+  border: 6px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  transition: border 500ms ease;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.bg-color-dark {
+  background-color: rgb(28, 26, 26);
+}
+
+.btn-dark-style {
+  color: white;
+  background-color: rgb(28, 26, 26);
+  border: 6px solid white;
+  box-shadow: 0 0 2rem 1rem rgb(221, 220, 110);
+}
