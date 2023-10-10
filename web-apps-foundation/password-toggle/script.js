@@ -4,7 +4,7 @@
 
 const inputField = document.querySelector(".input-pwd");
 const btn = document.querySelector(".toggle-btn");
-console.log(btn);
+
 btn.addEventListener("click", (event) => {
   if (inputField.type === "password") {
     inputField.type = "text";
