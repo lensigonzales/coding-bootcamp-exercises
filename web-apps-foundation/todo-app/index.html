@@ -9,11 +9,13 @@
 </head>
 
 <body>
-
-    <input class="todo-input" type="text">
-    <button class="add-btn">+</button>
-    <button class="remove-btn">Remove Done Todos</button>
-    <div class="filter">
+    <h1 class="title">TODAY</h1>
+    <div class="input-wrapper">
+        <input class="todo-input box-style" type="text" placeholder="Todo">
+        <button class="add-btn btn box-style">+</button>
+        <button class="remove-btn btn box-style">Remove Done</button>
+    </div>
+    <div class="filter box-style">
         <div class="filter-all">
             <input type="radio" name="filter" value="all" id="all" checked>
             <label for="all">All</label>
@@ -27,10 +29,12 @@
             <label for="done">Done</label>
         </div>
     </div>
+    <section class="list-wrapper box-style">
+        <aside class="badge">TODO LIST</aside>
+        <ul class="todo-list">
 
-    <ul class="todo-list">
-
-    </ul>
+        </ul>
+    </section>
     <script src="script.js"></script>
 </body>
 
