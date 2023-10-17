@@ -78,6 +78,8 @@ addBtn.addEventListener("click", () => {
 
     renderTodos();
     storeData();
+  } else {
+    alert("Todo is already in the list!");
   }
 });
 
@@ -103,12 +105,11 @@ filter.addEventListener("change", (event) => {
 /* --- REMOVE DONE TODOS --- */
 
 removeBtn.addEventListener("click", () => {
-  state.todos.forEach((item, index) =>
-    item.done ? state.todos.splice(index, 1) : ""
-  );
+  state.todos = state.todos.filter((item) => !item.done);
 
   renderTodos();
   storeData();
 });
 
 renderTodos();
+console.log(state);
