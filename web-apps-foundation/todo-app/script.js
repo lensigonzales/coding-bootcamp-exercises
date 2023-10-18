@@ -112,4 +112,3 @@ removeBtn.addEventListener("click", () => {
 });
 
 renderTodos();
-console.log(state);
