@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,200&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  height: 100dvh;
+}
+
+header {
+  background-color: rgb(196, 225, 254);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.getquote-btn {
+  all: unset;
+  height: 1rem;
+  padding: 1rem;
+  background-color: rgb(55, 55, 234);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main {
+  margin-top: 4rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  font-size: 2rem;
+}
+
+.author {
+  color: grey;
+}
