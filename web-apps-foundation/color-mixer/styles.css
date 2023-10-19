@@ -7,22 +7,48 @@ body {
 header {
   background-color: rgba(254, 254, 254, 0.665);
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .color-code {
-  font-size: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
   display: inline;
-  margin-left: 4rem;
 }
 
 .red {
   accent-color: red;
+  width: 16rem;
 }
 
 .green {
   accent-color: green;
+  width: 16rem;
 }
 
 .blue {
   accent-color: blue;
+  width: 16rem;
+}
+
+.random-btn {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    flex-direction: row;
+  }
+  input {
+    width: 12rem;
+  }
 }
