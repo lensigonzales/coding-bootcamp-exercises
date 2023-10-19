@@ -28,6 +28,7 @@ function renderTodos() {
     checkbox.type = "checkbox";
     checkbox.checked = todo.done;
     newTodo.innerText = todo.description;
+    newTodo.id = todo.id;
     newTodo.todoObj = todo;
 
     newTodo.appendChild(checkbox);
